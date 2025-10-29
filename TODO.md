@@ -1,13 +1,13 @@
 # Deployment Plan for Student Feedback App
 
-## Step 1: Switch Backend from SQLite to MongoDB
+## Step 1: Switch Backend from SQLite to Free SQL Database (PostgreSQL on Railway)
 
-- [ ] Update backend/package.json to include mongoose and remove sqlite3
-- [ ] Update backend/config/database.js to connect to MongoDB
-- [ ] Update backend/models/Feedback.js to use Mongoose schema
-- [ ] Update backend/controllers/feedbackController.js for MongoDB operations
-- [ ] Create backend/.env file with MongoDB URI placeholder
-- [ ] Test backend with MongoDB locally
+- [x] Update backend/package.json to include pg (PostgreSQL driver) and remove sqlite3
+- [x] Update backend/config/database.js to connect to PostgreSQL
+- [x] Update backend/models/Feedback.js to use Sequelize ORM for PostgreSQL
+- [x] Update backend/controllers/feedbackController.js for PostgreSQL operations
+- [x] Create backend/.env file with PostgreSQL connection string placeholder
+- [ ] Test backend with PostgreSQL locally
 
 ## Step 2: Push to GitHub
 
@@ -40,3 +40,7 @@
 - [ ] Test live application
 - [ ] Verify data persistence
 - [ ] Update README with live links
+
+## Add Footer to React App
+
+- [x] Add footer element to frontend/src/App.js with copyright text
